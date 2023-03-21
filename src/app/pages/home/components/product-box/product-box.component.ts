@@ -1,11 +1,17 @@
-import { Component, Input } from "@angular/core";
-
+import { Component, Input, Output, EventEmitter } from "@angular/core";
+import { Product } from "../../../../models/product.model";
 @Component({
   selector: "app-product-box",
   templateUrl: `./product-box.component.html`,
 })
 export class ProductBoxComponent {
   @Input() fullWidthMode = false;
+  @Input() product: Product | undefined;
+  @Output() addToCart = new EventEmitter();
 
   constructor() {}
+
+  onAddToCart(): void {
+    this.addToCart.emit(this.product);
+  }
 }
