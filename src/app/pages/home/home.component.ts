@@ -22,7 +22,7 @@ export class HomeComponent implements OnInit, OnDestroy {
   constructor(
     private cartService: CartService,
     private storeService: StoreService
-  ) {}
+  ) { }
 
   ngOnInit(): void {
     this.getProducts();
