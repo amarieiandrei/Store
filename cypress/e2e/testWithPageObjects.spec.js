@@ -12,6 +12,6 @@ describe('Test with Page Objects', () => {
     })
 
     // it.only('Using Global Commands', () => {
-    //     cy.openHomePage();
+    //     cy.openApplication();
     // })
 })

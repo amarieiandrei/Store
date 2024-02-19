@@ -36,6 +36,6 @@
 //   }
 // }
 
-Cypress.Commands.add('openHomePage', () => {
+Cypress.Commands.add('openApplication', () => {
     cy.visit('/')
 })
